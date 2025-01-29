@@ -30,9 +30,6 @@
       .font-garamond {
         font-family: "EB Garamond", serif;
       }
-      .bg-image {
-        background-image: url(./images/banner.png);
-      }
     </style>
     <script>
       tailwind.config = {
@@ -127,7 +124,9 @@
                 <details>
                   <summary>Services</summary>
                   <ul class="p-2">
-                    <li><a>Business Formation</a></li>
+                    <li class="z-[10] text-[white font-bold]">
+                      <a>Business Formation</a>
+                    </li>
                     <li><a>Contracts & Agreements</a></li>
                     <li><a>Mergers & Acquisitions</a></li>
                     <li><a>Intellectual Property</a></li>
@@ -176,8 +175,15 @@
       </nav>
       <!-- banner -->
       <section
-        class="w-10/12 mx-auto mt-9 bg-image bg-cover bg-center bg-no-repeat rounded-lg"
+        class="w-10/12 z-1 relative mx-auto mt-9 bg-[url('/images/banner.png')] bg-cover bg-center bg-no-repeat rounded-lg"
       >
+        <div>
+          <img
+            class="absolute w-full h-full z-0 pointer-events-none"
+            src="images/Rectangle 5.png"
+            alt=""
+          />
+        </div>
         <div class="hero min-h-[70vh]">
           <div class="hero-content text-center">
             <div class="max-w-lg">
@@ -349,7 +355,290 @@
           </div>
         </div>
       </section>
+
+      <!-- carousel section -->
+      <section class="w-10/12 mx-auto mt-32 mb-32">
+        <div class="text-center mb-16">
+          <h2 class="text-[#414040] text-2xl font-bold">What Our Client Say</h2>
+          <p class="text-[#707070] w-2/5 mx-auto">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour.
+          </p>
+        </div>
+        <!-- image section -->
+
+        <div
+          class="carousel z-1 relative w-full bg-[url('/images/banner.png')] bg-cover bg-center bg-no-repeat min-h-[70vh]"
+        >
+          <div>
+            <img
+              class="absolute w-full h-full z-0 pointer-events-none"
+              src="images/Rectangle 7.png"
+              alt=""
+            />
+          </div>
+          <!-- slide 1 -->
+          <div id="slide1" class="carousel-item relative w-full">
+            <div class="text-center py-24">
+              <div class="mb-6">
+                <img class="mx-auto" src="images/Ellipse 1.png" alt="" />
+              </div>
+              <div class="mb-6 text-[white] font-semibold]">
+                <h2>Awlad Hasan</h2>
+                <small>UX/UI designer</small>
+              </div>
+              <p class="w-4/6 mx-auto text-[white] font-semibold]">
+                Contrary to popular belief, Lorem Ipsum is not simply random
+                text. It has roots in a piece of classical Latin literature from
+                45 BC, making it over 2000 years old. Richard McClintock, a
+                Latin professor at Hampden-Sydney College in Virginia, looked up
+                one of the more obscure Latin words, consectetur.
+              </p>
+            </div>
+            <div
+              class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+            >
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <!-- slide 2 -->
+          <div>
+            <img
+              class="absolute w-full h-full z-0 pointer-events-none"
+              src="images/Rectangle 7.png"
+              alt=""
+            />
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <div class="text-center py-24">
+              <div class="mb-6">
+                <img class="mx-auto" src="images/Ellipse 1.png" alt="" />
+              </div>
+              <div class="mb-6 text-[white] font-semibold]">
+                <h2>Awlad Hasan</h2>
+                <small>UX/UI designer</small>
+              </div>
+              <p class="w-4/6 mx-auto text-[white] font-semibold]">
+                Contrary to popular belief, Lorem Ipsum is not simply random
+                text. It has roots in a piece of classical Latin literature from
+                45 BC, making it over 2000 years old. Richard McClintock, a
+                Latin professor at Hampden-Sydney College in Virginia, looked up
+                one of the more obscure Latin words, consectetur.
+              </p>
+            </div>
+            <div
+              class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+            >
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <!-- slide 3 -->
+          <div>
+            <img
+              class="absolute w-full h-full z-0 pointer-events-none"
+              src="images/Rectangle 7.png"
+              alt=""
+            />
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <div class="text-center py-24">
+              <div class="mb-6">
+                <img class="mx-auto" src="images/Ellipse 1.png" alt="" />
+              </div>
+              <div class="mb-6 text-[white] font-semibold]">
+                <h2>Awlad Hasan</h2>
+                <small>UX/UI designer</small>
+              </div>
+              <p class="w-4/6 mx-auto text-[white] font-semibold]">
+                Contrary to popular belief, Lorem Ipsum is not simply random
+                text. It has roots in a piece of classical Latin literature from
+                45 BC, making it over 2000 years old. Richard McClintock, a
+                Latin professor at Hampden-Sydney College in Virginia, looked up
+                one of the more obscure Latin words, consectetur.
+              </p>
+            </div>
+            <div
+              class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+            >
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- faq section -->
+      <section class="w-10/12 mx-auto mt-32 mb-32">
+        <div class="text-center mb-16">
+          <h2 class="text-[#414040] text-2xl font-bold">
+            Frequently Asked Any Questions
+          </h2>
+          <p class="text-[#707070] w-3/5 mx-auto">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour.
+          </p>
+        </div>
+        <div class="hero">
+          <div class="hero-content flex-col lg:flex-row-reverse">
+            <img src="images/faq.png" class="max-w-full lg:w-3/6" />
+            <div class="space-y-6">
+              <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" checked="checked" />
+                <div class="collapse-title text-xl font-medium">
+                  Click to open this one and close others
+                </div>
+                <div class="collapse-content">
+                  <p>hello</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-medium">
+                  Click to open this one and close others
+                </div>
+                <div class="collapse-content">
+                  <p>hello</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-medium">
+                  Click to open this one and close others
+                </div>
+                <div class="collapse-content">
+                  <p>hello</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-medium">
+                  Click to open this one and close others
+                </div>
+                <div class="collapse-content">
+                  <p>hello</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-medium">
+                  Click to open this one and close others
+                </div>
+                <div class="collapse-content">
+                  <p>hello</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- contact with us section -->
+      <section class="w-10/12 mx-auto mt-32 mb-32">
+        <!-- top text -->
+        <div class="text-center mb-12">
+          <h2 class="text-[#414040] text-2xl font-bold">Contact With Us</h2>
+          <p class="text-[#707070] w-3/5 mx-auto">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour.
+          </p>
+        </div>
+        <div class="hero">
+          <div class="hero-content flex-col lg:flex-row">
+            <!-- left section -->
+            <div class="grid grid-cols-2">
+              <!-- first -->
+              <div
+                class="bg-[#F3F3F3] space-y-4 text-center p-12 border-r-2 border-b-2"
+              >
+                <img class="mx-auto" src="images/call.png" alt="" />
+                <h2 class="font-semibold text-xl">address</h2>
+                <small>A108 Adam Street, New York, NY 535022</small>
+              </div>
+              <!--second -->
+              <div class="bg-[#F3F3F3] space-y-4 text-center p-12 border-b-2">
+                <img class="mx-auto" src="images/address.png" alt="" />
+                <h2 class="font-semibold text-xl">Call Us</h2>
+                <small
+                  >+88 01750 00 00 00 <br />
+                  +88 01750 00 00 00</small
+                >
+              </div>
+              <!-- third -->
+              <div
+                class="bg-[#F3F3F3] space-y-4 text-center p-12 border-r-2 border-b-2"
+              >
+                <img class="mx-auto" src="images/email.png" alt="" />
+                <h2 class="font-semibold text-xl">Email Us</h2>
+                <small>info@gmail.com info@gmail.com</small>
+              </div>
+              <!-- fourth -->
+              <div class="bg-[#F3F3F3] space-y-4 text-center p-12 border-b-2">
+                <img class="mx-auto" src="images/time.png" alt="" />
+                <h2 class="font-semibold text-xl">Working Hours</h2>
+                <small
+                  >Mon-Fri: 9AM to 5PM <br />
+                  Sunday: 9AM to 1 PM</small
+                >
+              </div>
+            </div>
+            <!-- right section -->
+            <div class="card bg-base-100 w-full max-w-sm">
+              <form class="card-body space-y-5">
+                <div class="form-control">
+                  <input
+                    type="text"
+                    placeholder="Name "
+                    class="input input-bordered bg-[#F3F3F3]"
+                    required
+                  />
+                </div>
+                <div class="form-control">
+                  <input
+                    type="email"
+                    placeholder="email "
+                    class="input input-bordered bg-[#F3F3F3]"
+                    required
+                  />
+                </div>
+                <div class="form-control">
+                  <input
+                    type="password"
+                    placeholder="password"
+                    class="input input-bordered bg-[#F3F3F3]"
+                    required
+                  />
+                  <label class="label">
+                    <a href="#" class="label-text-alt link link-hover"
+                      >Forgot password?</a
+                    >
+                  </label>
+                </div>
+                <div class="form-control">
+                  <textarea
+                    name=""
+                    id=""
+                    cols="20"
+                    rows="5"
+                    placeholder="Your message"
+                    class="bg-[#F3F3F3] border-2 border-gray-300"
+                  ></textarea>
+                </div>
+                <div class="form-control mt-6">
+                  <button class="btn bg-btn-nav">Login</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer>
+      <section class="w-10/12 mx-auto mt-32 mb-32"></section>
+    </footer>
   </body>
 </html>
